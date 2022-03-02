@@ -1,0 +1,39 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+.app {
+  display:inline-block;
+  width: 100vw;
+  height: 100vh;
+  
+   &-title {
+    animation-name: titleOpacity;
+    animation-duration: 5s;
+    margin-top: 45%;
+    position: relative;
+    color: rgb(205, 217, 235,0.8);
+    }
+    &-main-title {
+      display: flex;
+      justify-content: center;
+      font-size: 8rem;
+    }
+    &-subtitle {
+      display: flex;
+      justify-content: center;
+      font-size: 3rem;
+      text-decoration: underline;
+    }
+}
+
+@keyframes titleOpacity {
+  from {
+    color: rgb(205, 217, 235, 0);
+  }
+  to {
+    color: rgb(205, 217, 235,0.8);
+  }
+}

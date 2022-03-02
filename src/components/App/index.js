@@ -1,15 +1,20 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 // == Import
-import reactLogo from './react-logo.svg';
-import './styles.css';
-
-import Counter from '../Counter';
+import './styles.scss';
+import backgroundImage from '../../../public/IMG-background.jpg';
 
 // == Composant
 const App = () => (
   <div className="app">
-    <img src={reactLogo} alt="react logo" />
-    <h1>Composant : App</h1>
-    <Counter />
+    <img className="background" src={backgroundImage} alt="image de meculda" />
+    <div className="app-title">
+      <h1 className="app-main-title">
+        Meculda
+      </h1>
+      <h2 className="app-subtitle">
+        Ludovic Lavialle Photographe
+      </h2>
+    </div>
   </div>
 );
 
