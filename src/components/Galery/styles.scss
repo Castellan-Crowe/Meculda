@@ -1,0 +1,65 @@
+.galery {
+  background-color: rgb(205, 217, 235,0.5);
+  width: 85vw;
+  height: 30vh;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  &-image {
+    border: black 5px solid;
+    display: inline-block;
+    margin: 4rem;
+    height: 200px;
+    width: 230px;
+  }
+  &-container {
+    background-image: url('../../../public/banniere.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    background-color: black;
+    top: 0px;
+    height: 100vh;
+  }
+}
+.slider {
+  position: absolute;
+  top: 2rem;
+  margin-left: 35%;
+  width: 80%; 
+  max-width: 800px;
+  overflow: hidden;
+  &-figure {
+    position: relative; 
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+  }
+  &-image {
+    height: auto; 
+    float: left
+  }
+}
+
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}

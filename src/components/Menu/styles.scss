@@ -6,15 +6,22 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    width: 15%;
+    width: 15vw;
     background-color: rgb(205, 217, 235,0.5);
-}
+  }
   &-items {
+    background-color: rgb(205, 217, 235,0.1);
     font-size: 2rem;
     display: flex;
+    margin: auto;
+    width: 80%;
+    margin-top: 20%;
+    align-items: center;
     justify-content: center;
-    padding: 3rem;
-}
+  }
+  &-items:hover{
+    font-size: 250%;
+  }
   &-image {
     height: 50px;
     width: 50px;
