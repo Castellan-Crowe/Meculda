@@ -1,0 +1,28 @@
+.menu {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 15%;
+    background-color: rgb(205, 217, 235,0.5);
+}
+  &-items {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+  &-image {
+    height: 50px;
+    width: 50px;
+  }
+
+}
+.second-menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
